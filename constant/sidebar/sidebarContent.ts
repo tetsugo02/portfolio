@@ -2,7 +2,7 @@ import { Home, Inbox, Waypoints, Wrench } from "lucide-react";
 export const sidebarItems = [
 	{
 		title: "Home",
-		url: "#",
+		url: "/",
 		icon: Home,
 	},
 	{

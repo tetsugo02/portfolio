@@ -15,13 +15,12 @@ import { sidebarItems } from "@/constant/sidebar/sidebarContent";
 
 export const AppSidebar = () => {
 	return (
-		<Sidebar className="h-screen pt-10 bg-gray-50">
-			<div className="font-bold text-xl flex flex-col items-center gap-2">
+		<Sidebar className="h-screen items-center">
+			<div className="font-bold text-xl flex flex-col items-center gap-2 pt-10">
 				<img src="/avatar.png" className="w-40 h-40 mx-auto border-2 rounded-full " />
-				<span>tetsugo</span>
+				<span>Tetsugo To</span>
 			</div>
 			<SidebarContent className="px-4">
-				<SidebarHeader></SidebarHeader>
 				<SidebarGroup>
 					<SidebarGroupContent>
 						<SidebarMenu className="flex flex-col gap-5">

@@ -1,66 +1,43 @@
 "use client";
 
-import * as React from "react";
-import Link from "next/link";
-import Image from "next/image"; // Next.js の Image コンポーネントをインポート
+import { Select, SelectTrigger, SelectContent, SelectItem } from "../ui/select";
 
 import {
 	NavigationMenu,
 	NavigationMenuItem,
-	NavigationMenuLink,
 	NavigationMenuList,
-	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { SunMoon } from "lucide-react";
+import { Button } from "../ui/button";
+import { SelectValue } from "../ui/select";
+import { useTheme } from "next-themes";
 
 export const Navibar = () => {
+	const { theme, setTheme } = useTheme();
+	const toggleTheme = () => {
+		setTheme(theme === "dark" ? "light" : "dark");
+	};
+
 	return (
-		<header className="w-full border-b border-gray-200">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-				<div className="font-bold text-xl flex items-center gap-2">
-					<Image src="/avatar.png" alt="Avatar" width={40} height={40} className="rounded-full" />
-					<span>tetsugo</span>
-				</div>
+		<header className="w-full border-b justify-center">
+			<div className="max-w-8xl  px-4 sm:px-6 lg:px-2 flex justify-end items-center h-16">
 				<NavigationMenu viewport={false}>
 					<NavigationMenuList className="gap-1">
 						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={`${navigationMenuTriggerStyle()} text-base font-medium`}
-							>
-								<Link href="/">Home</Link>
-							</NavigationMenuLink>
+							<Select>
+								<SelectTrigger className="w-48">
+									<SelectValue defaultValue="en" />
+								</SelectTrigger>
+								<SelectContent>
+									<SelectItem value="en">English</SelectItem>
+									<SelectItem value="ja">日本語</SelectItem>
+								</SelectContent>
+							</Select>
 						</NavigationMenuItem>
 						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={`${navigationMenuTriggerStyle()} text-base font-medium`}
-							>
-								<Link href="/about">About</Link>
-							</NavigationMenuLink>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={`${navigationMenuTriggerStyle()} text-base font-medium`}
-							>
-								<Link href="/projects">Works</Link>
-							</NavigationMenuLink>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={`${navigationMenuTriggerStyle()} text-base font-medium`}
-							>
-								<Link href="/blog">Blog</Link>
-							</NavigationMenuLink>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<NavigationMenuLink
-								asChild
-								className={`${navigationMenuTriggerStyle()} text-base font-medium`}
-							>
-								<Link href="/contact">Contact</Link>
-							</NavigationMenuLink>
+							<Button variant="ghost" className="h-12 w-12" onClick={toggleTheme}>
+								<SunMoon size={64} />
+							</Button>
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
