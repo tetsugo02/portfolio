@@ -1,3 +1,5 @@
+"use client";
+
 import {
 	Sidebar,
 	SidebarContent,
@@ -15,10 +17,7 @@ export const AppSidebar = () => {
 	return (
 		<Sidebar className="h-screen pt-10 bg-gray-50">
 			<div className="font-bold text-xl flex flex-col items-center gap-2">
-				<Avatar className="w-40 h-40 mx-auto border-2 ">
-					<AvatarImage src="/avatar.png" alt="Avatar" />
-					<AvatarFallback className="text-2xl">t</AvatarFallback>
-				</Avatar>
+				<img src="/avatar.png" className="w-40 h-40 mx-auto border-2 rounded-full " />
 				<span>tetsugo</span>
 			</div>
 			<SidebarContent className="px-4">

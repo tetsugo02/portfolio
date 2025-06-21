@@ -7,17 +7,17 @@ export const sidebarItems = [
 	},
 	{
 		title: "About",
-		url: "#",
+		url: "/about",
 		icon: Inbox,
 	},
 	{
 		title: "Works",
-		url: "#",
+		url: "/works",
 		icon: Waypoints,
 	},
 	{
 		title: "Skills",
-		url: "#",
+		url: "/skills",
 		icon: Wrench,
 	},
 ];
