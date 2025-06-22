@@ -20,7 +20,7 @@ export const AppSidebar = () => {
 		<Sidebar className="h-screen items-center">
 			<div className="font-bold text-xl flex flex-col items-center pt-10 pb-10">
 				<Image
-					src="/avatar.png"
+					src={process.env.NODE_ENV === "production" ? "/portfolio/avatar.png" : "/avatar.png"}
 					alt="Avatar"
 					className="w-40 h-40 mx-auto border-2 rounded-full "
 				/>
