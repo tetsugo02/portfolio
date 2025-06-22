@@ -1,7 +1,5 @@
 "use client";
 
-import { Select, SelectTrigger, SelectContent, SelectItem } from "../ui/select";
-
 import {
 	NavigationMenu,
 	NavigationMenuItem,
@@ -24,15 +22,7 @@ export const Navibar = () => {
 				<NavigationMenu viewport={false}>
 					<NavigationMenuList className="gap-1">
 						<NavigationMenuItem>
-							<Select>
-								<SelectTrigger className="w-48">
-									<SelectValue defaultValue="en" />
-								</SelectTrigger>
-								<SelectContent>
-									<SelectItem value="en">English</SelectItem>
-									<SelectItem value="ja">日本語</SelectItem>
-								</SelectContent>
-							</Select>
+
 						</NavigationMenuItem>
 						<NavigationMenuItem>
 							<Button variant="ghost" className="h-12 w-12" onClick={toggleTheme}>
