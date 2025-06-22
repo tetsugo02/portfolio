@@ -1,9 +1,12 @@
+import { Header } from "@/components/atom/header";
+import { LanguagesSkill } from "@/components/organism/skill/languagesSkill";
+
 const SkillsPage = () => {
 	return (
-		<div className="flex flex-col items-center justify-center h-screen">
-			<h1 className="text-4xl font-bold mb-4">Skills</h1>
-			<p className="text-lg">This is the Skills page.</p>
-		</div>
+		<>
+			<Header level="h1">Skills</Header>
+			<LanguagesSkill />
+		</>
 	);
 };
 export default SkillsPage;

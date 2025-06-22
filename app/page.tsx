@@ -8,7 +8,7 @@ import { WorkExperience } from "@/components/organism/workExperience";
 
 export default function Home() {
 	return (
-		<div>
+		<>
 			<Header level="h1">About</Header>
 			<div className=" justify-items-start w-full flex flex-col gap-4  ">
 				<article className="">
@@ -31,6 +31,6 @@ export default function Home() {
 			</Header>
 			<WorkExperience />
 			<footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
-		</div>
+		</>
 	);
 }
