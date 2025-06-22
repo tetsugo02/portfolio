@@ -1,4 +1,3 @@
-import { VscGithub } from "react-icons/vsc";
 import { snsBarItems } from "@/constant/sidebar/sidebarContent";
 
 export const SnsBar = () => {

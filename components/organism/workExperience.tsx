@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardDescription, CardContent } from "../ui/card";
+import { Card, CardHeader, CardContent } from "../ui/card";
 import { Paragraph } from "../atom/paragraph";
 
 export const WorkExperience = () => {

@@ -5,7 +5,6 @@ import {
 	SidebarContent,
 	SidebarGroup,
 	SidebarGroupContent,
-	SidebarHeader,
 	SidebarMenu,
 	SidebarMenuButton,
 	SidebarMenuItem,
@@ -14,12 +13,17 @@ import {
 import { sidebarItems } from "@/constant/sidebar/sidebarContent";
 import { SnsBar } from "../molecules/snsBar";
 import Link from "next/link";
+import Image from "next/image";
 
 export const AppSidebar = () => {
 	return (
 		<Sidebar className="h-screen items-center">
 			<div className="font-bold text-xl flex flex-col items-center pt-10 pb-10">
-				<img src="/avatar.png" className="w-40 h-40 mx-auto border-2 rounded-full " />
+				<Image
+					src="/avatar.png"
+					alt="Avatar"
+					className="w-40 h-40 mx-auto border-2 rounded-full "
+				/>
 				<span>Tetsugo To</span>
 				<span>董 哲豪</span>
 				<SnsBar />
