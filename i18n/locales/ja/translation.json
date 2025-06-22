@@ -1,0 +1,27 @@
+{
+	"home": "Home",
+	"skillsPage": "Skills",
+	"works": "Works",
+	"languages": {
+		"english": "English",
+		"japanese": "Japanese"
+	},
+	"bio": {
+		"title": "自己紹介",
+		"subtitle": "ソフトウェアエンジニア"
+	},
+	"education": {
+		"title": "学歴"
+	},
+	"interests": {
+		"title": "趣味・関心"
+	},
+	"workExperience": {
+		"title": "職務経歴"
+	},
+	"skillsSection": {
+		"certifications": "資格",
+		"languages": "言語",
+		"technical": "技術スキル"
+	}
+}

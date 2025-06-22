@@ -1,20 +1,21 @@
 import { Inbox, Waypoints, Wrench } from "lucide-react";
 import { VscGithub } from "react-icons/vsc";
 import { IoMail } from "react-icons/io5";
+import { TFunction } from "i18next";
 
-export const sidebarItems = [
+export const getSidebarItems = (t: TFunction) => [
 	{
-		title: "About",
+		title: t("home"),
 		url: "/",
 		icon: Inbox,
 	},
 	{
-		title: "Works",
+		title: t("works"),
 		url: "/works",
 		icon: Waypoints,
 	},
 	{
-		title: "Skills",
+		title: t("skillsPage"),
 		url: "/skills",
 		icon: Wrench,
 	},

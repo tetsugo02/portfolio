@@ -10,12 +10,16 @@ import {
 	SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-import { sidebarItems } from "@/constant/sidebar/sidebarContent";
+import { getSidebarItems } from "@/constant/sidebar/sidebarContent";
 import { SnsBar } from "../molecules/snsBar";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export const AppSidebar = () => {
+	const { t } = useTranslation();
+	const sidebarItems = getSidebarItems(t);
+
 	return (
 		<Sidebar className="h-screen items-center">
 			<div className="font-bold text-xl flex flex-col items-center pt-10 pb-10">
@@ -36,7 +40,7 @@ export const AppSidebar = () => {
 					<SidebarGroupContent>
 						<SidebarMenu className="flex flex-col gap-5">
 							{sidebarItems.map((item) => (
-								<SidebarMenuItem key={item.title} className="flex">
+								<SidebarMenuItem key={item.url} className="flex">
 									<SidebarMenuButton asChild className=" text-xl h-15">
 										<Link href={item.url}>
 											<item.icon />

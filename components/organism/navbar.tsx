@@ -9,6 +9,7 @@ import { SunMoon } from "lucide-react";
 import { Button } from "../ui/button";
 import { SelectValue } from "../ui/select";
 import { useTheme } from "next-themes";
+import { LanguageSelector } from "../molecules/languageSelector";
 
 export const Navibar = () => {
 	const { theme, setTheme } = useTheme();
@@ -22,7 +23,7 @@ export const Navibar = () => {
 				<NavigationMenu viewport={false}>
 					<NavigationMenuList className="gap-1">
 						<NavigationMenuItem>
-
+							<LanguageSelector />
 						</NavigationMenuItem>
 						<NavigationMenuItem>
 							<Button variant="ghost" className="h-12 w-12" onClick={toggleTheme}>

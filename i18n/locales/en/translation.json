@@ -1,0 +1,27 @@
+{
+	"home": "Home",
+	"skillsPage": "Skills",
+	"works": "Works",
+	"languages": {
+		"english": "English",
+		"japanese": "Japanese"
+	},
+	"bio": {
+		"title": "About Me",
+		"subtitle": "Software Engineer"
+	},
+	"education": {
+		"title": "Education"
+	},
+	"interests": {
+		"title": "Interests"
+	},
+	"workExperience": {
+		"title": "Work Experience"
+	},
+	"skillsSection": {
+		"certifications": "Certifications",
+		"languages": "Languages",
+		"technical": "Technical Skills"
+	}
+}
