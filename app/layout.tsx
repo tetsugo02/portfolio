@@ -54,8 +54,8 @@ export default function RootLayout({
 							</div>
 							<div className="flex flex-col flex-1 w-full overflow-hidden">
 								<Navibar />
-								<main className="flex-1 w-full overflow-auto">
-									<div className="w-full max-w-5xl mx-auto flex flex-col gap-6  justify-items-start min-h-screen p-4 sm:p-8 md:p-12 lg:p-16">
+								<main className="flex-1 w-full overflow-y-auto overflow-x-hidden">
+									<div className="w-full px-3 sm:px-6 md:px-8 lg:max-w-6xl lg:mx-auto flex flex-col gap-6 justify-items-start min-h-screen py-4 sm:py-8">
 										{children}
 									</div>
 								</main>

@@ -11,8 +11,8 @@ export const TechSkill = () => {
 				<CardContent className=" flex flex-row flex-wrap gap-2">
 					{techSkillList.map((skill, index) => {
 						return (
-							<Tooltip>
-								<TooltipTrigger asChild key={index}>
+							<Tooltip key={index}>
+								<TooltipTrigger asChild>
 									<Card
 										className="py-0 min-w-14 min-h-14 items-center justify-center hover:shadow-lg transition-shadaw ease-in-out"
 										key={index}

@@ -6,7 +6,7 @@ const SkillsPage = () => {
 	return (
 		<>
 			<Header level="h1">Skills</Header>
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-0 px-0">
+			<div className="grid grid-cols-1 lg:grid-cols-2 mx-0 px-0">
 				<TechSkill />
 				<Certification />
 			</div>
