@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 	title: "Tetsugo",
 	description: "tetsugo's personal website",
 	icons: {
-		icon: "/avatar.png",
+		icon: `${process.env.NODE_ENV === "production" ? "/portfolio/avatar.png" : "/avatar.png"}`,
 	},
 };
 
