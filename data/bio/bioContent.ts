@@ -15,5 +15,9 @@ export const bioContent: BioContentType = {
 			field: "Keio University, Electronics and Electrical Engineering",
 			time: "2023/4 ~",
 		},
+		{
+			field: "keio University, Murata Laboratory",
+			time: "2025/4 ~",
+		},
 	] as EducationContent[],
 };

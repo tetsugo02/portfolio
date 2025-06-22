@@ -12,15 +12,17 @@ import {
 } from "@/components/ui/sidebar";
 
 import { sidebarItems } from "@/constant/sidebar/sidebarContent";
+import { SnsBar } from "../molecules/snsBar";
 import Link from "next/link";
 
 export const AppSidebar = () => {
 	return (
 		<Sidebar className="h-screen items-center">
-			<div className="font-bold text-xl flex flex-col items-center gap-2 pt-10">
+			<div className="font-bold text-xl flex flex-col items-center pt-10 pb-10">
 				<img src="/avatar.png" className="w-40 h-40 mx-auto border-2 rounded-full " />
 				<span>Tetsugo To</span>
 				<span>董 哲豪</span>
+				<SnsBar />
 			</div>
 			<SidebarContent className="px-4">
 				<SidebarGroup>

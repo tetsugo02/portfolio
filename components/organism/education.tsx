@@ -7,9 +7,11 @@ export const Education = () => {
 	return (
 		<div>
 			<Header level="h3">Education</Header>
-			{educationContent.map((item, index) => (
-				<SingleGrid key={index} head={item.field} body={item.time} className="text-lg" />
-			))}
+			<div className="m-2 border-l-2">
+				{educationContent.map((item, index) => (
+					<SingleGrid key={index} head={item.field} body={item.time} className="text-lg m-2 " />
+				))}
+			</div>
 		</div>
 	);
 };
