@@ -25,6 +25,7 @@ export const AppSidebar = () => {
 					className="w-40 h-40 mx-auto border-2 rounded-full "
 					width={160}
 					height={160}
+					priority
 				/>
 				<span>Tetsugo To</span>
 				<span>董 哲豪</span>

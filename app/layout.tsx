@@ -5,6 +5,13 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { ThemeProvider } from "@/components/atom/themeProvider";
 import { AppSidebar } from "@/components/organism/appSidebar";
 import { Navibar } from "@/components/organism/navbar";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+	weight: ["400", "500", "700"],
+	subsets: ["latin"],
+	variable: "--font-roboto",
+});
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -20,7 +27,7 @@ export const metadata: Metadata = {
 	title: "Tetsugo",
 	description: "tetsugo's personal website",
 	icons: {
-		icon: `${process.env.NODE_ENV === "production" ? "/portfolio/avatar.png" : "/avatar.png"}`,
+		icon: "/avatar.ico",
 	},
 };
 
@@ -31,7 +38,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
+			>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
@@ -46,7 +55,9 @@ export default function RootLayout({
 							<div className="flex flex-col flex-1 w-full overflow-hidden">
 								<Navibar />
 								<main className="flex-1 w-full overflow-auto">
-									<div className="w-full mx-auto justify-item">{children}</div>
+									<div className="w-full max-w-5xl mx-auto flex flex-col gap-6  justify-items-start min-h-screen p-4 sm:p-8 md:p-12 lg:p-16">
+										{children}
+									</div>
 								</main>
 							</div>
 						</div>
