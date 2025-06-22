@@ -8,8 +8,12 @@ export const bioContent: BioContentType = {
 	interest: ["Machine Learning", "Computer Network", "operating system"] as string[],
 	education: [
 		{
-			field: "B.E. in Electronics and Electrical Engineering",
-			time: "Keio University, 2022 - Present",
+			field: "Keio University, Faculty of Science and Technology ",
+			time: "2022/4 ~",
+		},
+		{
+			field: "Keio University, Electronics and Electrical Engineering",
+			time: "2023/4 ~",
 		},
 	] as EducationContent[],
 };

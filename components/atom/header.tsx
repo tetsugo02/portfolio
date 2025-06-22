@@ -10,5 +10,7 @@ interface HeaderProps {
 export const Header = ({ children, level, className }: HeaderProps) => {
 	const HeaderTag = level;
 
-	return <HeaderTag className={cn(headerStyles[level], className)}>{children}</HeaderTag>;
+	return (
+		<HeaderTag className={cn(headerStyles[level], className, " text-left")}>{children}</HeaderTag>
+	);
 };
