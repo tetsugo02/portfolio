@@ -46,7 +46,7 @@ export default function RootLayout({
 							<div className="flex flex-col flex-1 w-full overflow-hidden">
 								<Navibar />
 								<main className="flex-1 w-full overflow-auto">
-									<div className="w-full mx-auto">{children}</div>
+									<div className="w-full mx-auto justify-item">{children}</div>
 								</main>
 							</div>
 						</div>
