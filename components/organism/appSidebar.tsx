@@ -44,7 +44,7 @@ export const AppSidebar = () => {
 									<SidebarMenuButton asChild className=" text-xl h-15">
 										<Link href={item.url}>
 											<item.icon />
-											<span className=" ">{item.title}</span>
+											<span>{item.title}</span>
 										</Link>
 									</SidebarMenuButton>
 								</SidebarMenuItem>

@@ -2,7 +2,7 @@ import { CardHeader, CardContent } from "../ui/card";
 import { Paragraph } from "../atom/paragraph";
 import { ShadowCard } from "../atom/shadowCard";
 
-export const WorkExperience = () => {
+export const RecentExperience = () => {
 	return (
 		<ShadowCard className="w-full gap-0  ">
 			<CardHeader className=" text-xl font-semibold gap-4 grid grid-cols-2">

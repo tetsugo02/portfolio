@@ -4,7 +4,7 @@ import { bioContent } from "@/data/bio/bioContent";
 import { Interest } from "@/components/organism/interest";
 import { Education } from "@/components/organism/education";
 import { Separator } from "@/components/ui/separator";
-import { WorkExperience } from "@/components/organism/workExperience";
+import { RecentExperience } from "@/components/organism/workExperience";
 
 export default function Home() {
 	return (
@@ -27,9 +27,9 @@ export default function Home() {
 			</div>
 			<Separator />
 			<Header level="h1" className="mt-4">
-				Work Experience
+				Recent Experience
 			</Header>
-			<WorkExperience />
+			<RecentExperience />
 			<footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
 		</>
 	);

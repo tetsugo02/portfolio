@@ -1,9 +1,17 @@
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 const WorksPage = () => {
 	return (
-		<div className="flex flex-col items-center justify-center h-screen">
-			<h1 className="text-4xl font-bold mb-4">Works</h1>
-			<p className="text-lg">This is the works page.</p>
-		</div>
+		<>
+			<Tabs defaultValue="all" className="w-full h-screen">
+				<TabsList className="grid w-full grid-cols-2 grid-rows-2 h-1/10 lg:grid-cols-4 lg:grid-rows-1 lg:h-1/20">
+					<TabsTrigger value="all">All</TabsTrigger>
+					<TabsTrigger value="research">Research</TabsTrigger>
+					<TabsTrigger value="development">Development</TabsTrigger>
+					<TabsTrigger value="other">Other</TabsTrigger>
+				</TabsList>
+			</Tabs>
+		</>
 	);
 };
 export default WorksPage;

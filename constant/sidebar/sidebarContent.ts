@@ -2,24 +2,31 @@ import { Inbox, Waypoints, Wrench } from "lucide-react";
 import { VscGithub } from "react-icons/vsc";
 import { IoMail } from "react-icons/io5";
 import { TFunction } from "i18next";
+import { MdOutlineWorkHistory } from "react-icons/md";
 
 export const getSidebarItems = (t: TFunction) => [
 	{
-		title: t("home"),
+		title: t("about"),
 		url: "/",
 		icon: Inbox,
-	},
-	{
-		title: t("works"),
-		url: "/works",
-		icon: Waypoints,
 	},
 	{
 		title: t("skillsPage"),
 		url: "/skills",
 		icon: Wrench,
 	},
+	//{
+	//	title: t("experience"),
+	//	url: "/experience",
+	//	icon: MdOutlineWorkHistory,
+	//},
+	{
+		title: t("works"),
+		url: "/works",
+		icon: Waypoints,
+	},
 ];
+
 export const snsBarItems = {
 	github: {
 		url: "https://github.com/tetsugo02",

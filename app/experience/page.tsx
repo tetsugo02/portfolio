@@ -1,7 +1,7 @@
 import { LanguagesSkill } from "@/components/organism/skill/languagesSkill";
 import { TechSkill } from "@/components/organism/skill/techSkill";
 import { Certification } from "@/components/organism/skill/certification";
-const SkillsPage = () => {
+const ExperiencePage = () => {
 	return (
 		<>
 			<div className="grid grid-cols-1 lg:grid-cols-2 mx-0 px-0">
@@ -12,4 +12,4 @@ const SkillsPage = () => {
 		</>
 	);
 };
-export default SkillsPage;
+export default ExperiencePage;

@@ -1,7 +1,8 @@
 {
-	"home": "Home",
+	"about": "About",
 	"skillsPage": "Skills",
 	"works": "Works",
+	"experience": "Experience",
 	"languages": {
 		"english": "English",
 		"japanese": "Japanese"
@@ -21,7 +22,7 @@
 	},
 	"skillsSection": {
 		"certifications": "資格",
-		"languages": "言語",
+		"languages": "語学",
 		"technical": "技術スキル"
 	}
 }

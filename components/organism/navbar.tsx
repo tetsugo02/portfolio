@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { SunMoon } from "lucide-react";
 import { Button } from "../ui/button";
-import { SelectValue } from "../ui/select";
 import { useTheme } from "next-themes";
 import { LanguageSelector } from "../molecules/languageSelector";
 

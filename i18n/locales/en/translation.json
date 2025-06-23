@@ -1,7 +1,8 @@
 {
-	"home": "Home",
+	"about": "About",
 	"skillsPage": "Skills",
 	"works": "Works",
+	"experience": "Experience",
 	"languages": {
 		"english": "English",
 		"japanese": "Japanese"
