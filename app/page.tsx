@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<>
 			<Header level="h1">About</Header>
-			<div className=" justify-items-start w-full flex flex-col gap-4  ">
+			<div className=" justify-items-start w-full h-fit flex flex-col gap-4  ">
 				<article className="">
 					{bioContent.main.map((item, index) => {
 						return (
