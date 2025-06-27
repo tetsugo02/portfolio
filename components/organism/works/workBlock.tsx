@@ -8,12 +8,12 @@ import {
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { WorkBlockType } from "@/types/workBlockType";
-import { WorkHelper } from "@/lib/workHelper";
+import { getWorkTypeBadge } from "@/lib/workHelper";
 import { Separator } from "@/components/ui/separator";
 import { ExternalLink, Eye } from "lucide-react";
 
 export const WorkBlock = ({ title, description, link, workType, badges }: WorkBlockType) => {
-	const workTypeBadge = WorkHelper.getWorkTypeBadge(workType);
+	const workTypeBadge = getWorkTypeBadge(workType);
 
 	return (
 		<Dialog>

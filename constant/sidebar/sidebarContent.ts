@@ -2,7 +2,7 @@ import { Inbox, Waypoints, Wrench } from "lucide-react";
 import { VscGithub } from "react-icons/vsc";
 import { IoMail } from "react-icons/io5";
 import { TFunction } from "i18next";
-import { MdOutlineWorkHistory } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 
 export const getSidebarItems = (t: TFunction) => [
 	{
@@ -37,5 +37,10 @@ export const snsBarItems = {
 		url: "totetsugo2002[at]keio.jp",
 		size: 32,
 		icon: IoMail,
+	},
+	Linkedin: {
+		url: "https://www.linkedin.com/in/哲豪-董-634413306/",
+		size: 32,
+		icon: FaLinkedin, // Replace with actual LinkedIn icon if available
 	},
 };
