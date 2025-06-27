@@ -9,6 +9,7 @@ import { SunMoon } from "lucide-react";
 import { Button } from "../ui/button";
 import { useTheme } from "next-themes";
 import { LanguageSelector } from "../molecules/languageSelector";
+import { SidebarSheet } from "./sidebarSheet";
 
 export const Navibar = () => {
 	const { theme, setTheme } = useTheme();
@@ -18,7 +19,14 @@ export const Navibar = () => {
 
 	return (
 		<header className="w-full border-b justify-center">
-			<div className="max-w-8xl  px-4 sm:px-6 lg:px-2 flex justify-end items-center h-16">
+			<div className="max-w-8xl px-4 sm:px-6 lg:px-2 flex justify-between items-center h-16">
+				<NavigationMenu viewport={false}>
+					<NavigationMenuList className="gap-1">
+						<NavigationMenuItem className="lg:hidden">
+							<SidebarSheet />
+						</NavigationMenuItem>
+					</NavigationMenuList>
+				</NavigationMenu>
 				<NavigationMenu viewport={false}>
 					<NavigationMenuList className="gap-1">
 						<NavigationMenuItem>
