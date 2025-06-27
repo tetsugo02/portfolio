@@ -1,5 +1,7 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { WorkBlock } from "@/components/organism/works/workBlock";
+import { worksContent } from "@/constant/works/works";
+
 const WorksPage = () => {
 	return (
 		<>
@@ -11,11 +13,65 @@ const WorksPage = () => {
 					<TabsTrigger value="other">Other</TabsTrigger>
 				</TabsList>
 				<TabsContent value="all" className="w-full h-full ">
-					<div className="w-full h-full flex flex-wrap gap-4 justify-between mt-2">
-						<WorkBlock
-							title="Progate Hackthon"
-							description="2025年３月に行われたprogateハッカソンに参加し、AWS賞をもらいました。"
-						/>
+					<div className="w-full h-full flex flex-wrap gap-4 justify-center mt-2 lg:justify-between">
+						{worksContent.map((work, index) => (
+							<WorkBlock
+								key={index}
+								title={work.title}
+								description={work.description}
+								link={work.link}
+								workType={work.workType}
+								badges={work.badges}
+							/>
+						))}
+					</div>
+				</TabsContent>
+				<TabsContent value="research" className="w-full h-full ">
+					<div className="w-full h-full flex flex-wrap gap-4 justify-center mt-2 lg:justify-between">
+						{worksContent
+							.filter((work) => work.workType === "research")
+							.map((work, index) => (
+								<WorkBlock
+									key={index}
+									title={work.title}
+									description={work.description}
+									link={work.link}
+									workType={work.workType}
+									badges={work.badges}
+								/>
+							))}
+					</div>
+				</TabsContent>
+				<TabsContent value="development" className="w-full h-full ">
+					<div className="w-full h-full flex flex-wrap gap-4 justify-center mt-2 lg:justify-between">
+						{worksContent
+							.filter((work) => work.workType === "development")
+							.map((work, index) => (
+								<WorkBlock
+									key={index}
+									title={work.title}
+									description={work.description}
+									link={work.link}
+									workType={work.workType}
+									badges={work.badges}
+								/>
+							))}
+					</div>
+				</TabsContent>
+				<TabsContent value="other" className="w-full h-full ">
+					<div className="w-full h-full flex flex-wrap gap-4 justify-center mt-2 lg:justify-between">
+						{worksContent
+							.filter((work) => work.workType === "other")
+							.map((work, index) => (
+								<WorkBlock
+									key={index}
+									title={work.title}
+									description={work.description}
+									link={work.link}
+									workType={work.workType}
+									badges={work.badges}
+								/>
+							))}
 					</div>
 				</TabsContent>
 			</Tabs>
