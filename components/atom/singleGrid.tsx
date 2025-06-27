@@ -9,8 +9,8 @@ interface SingleGridProps {
 export const SingleGrid = ({ head, body, className }: SingleGridProps) => {
 	return (
 		<div className={cn("flex flex-col min-w-xl", className)}>
-			<h3 className="font-medium">{head}</h3>
-			<p className="text-gray-700">{body}</p>
+			<h3 className="font-semibold text-card-foreground">{head}</h3>
+			<p className="text-muted-foreground">{body}</p>
 		</div>
 	);
 };

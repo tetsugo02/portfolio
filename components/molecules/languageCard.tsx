@@ -14,7 +14,7 @@ export const LanguageCard = ({ name, percentage, description }: LanguageLevel) =
 	}
 
 	return (
-		<ShadowCard className="w-full gap-0">
+		<ShadowCard className="w-full gap-0 ">
 			<CardHeader>
 				<CardTitle className="text-xl">{name}</CardTitle>
 			</CardHeader>
@@ -28,7 +28,7 @@ export const LanguageCard = ({ name, percentage, description }: LanguageLevel) =
 						{percentage}%
 					</div>
 				</div>
-				<div className="text-muted-foreground">{description}</div>
+				<div className="text-muted-foreground w-full">{description}</div>
 			</CardContent>
 		</ShadowCard>
 	);
