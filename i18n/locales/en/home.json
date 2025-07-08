@@ -1,0 +1,34 @@
+{
+	"bio": {
+		"title": "About Me",
+		"subtitle": "Software Engineer",
+		"main": [
+			"I am a undergraduate student at the Keio University in Japan",
+			"I also work as a Research Engineer intern."
+		],
+		"interests": ["Machine Learning", "Computer Network", "Operating System"],
+		"education": [
+			{
+				"field": "Keio University, Faculty of Science and Technology",
+				"time": "2022/4 ~"
+			},
+			{
+				"field": "Keio University, Electronics and Electrical Engineering",
+				"time": "2023/4 ~"
+			},
+			{
+				"field": "Keio University, Murata Laboratory",
+				"time": "2025/4 ~"
+			}
+		]
+	},
+	"education": {
+		"title": "Education"
+	},
+	"interests": {
+		"title": "Interests"
+	},
+	"workExperience": {
+		"title": "Work Experience"
+	}
+}

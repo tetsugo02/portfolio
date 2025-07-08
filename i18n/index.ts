@@ -1,15 +1,23 @@
 // Translation resources
-import translationEN from "./locales/en/translation.json";
-import translationJA from "./locales/ja/translation.json";
+import commonEN from "./locales/en/common.json";
+import commonJA from "./locales/ja/common.json";
+import homeEN from "./locales/en/home.json";
+import homeJA from "./locales/ja/home.json";
+import skillsEN from "./locales/en/skills.json";
+import skillsJA from "./locales/ja/skills.json";
 
 export const resources = {
 	en: {
-		translation: translationEN,
+		common: commonEN,
+		home: homeEN,
+		skills: skillsEN,
 	},
 	ja: {
-		translation: translationJA,
+		common: commonJA,
+		home: homeJA,
+		skills: skillsJA,
 	},
 };
 
-export const defaultNS = "translation";
+export const defaultNS = "common";
 export const fallbackLng = "en";

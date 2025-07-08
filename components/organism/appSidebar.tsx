@@ -17,7 +17,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
 export const AppSidebar = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation("common");
 	const sidebarItems = getSidebarItems(t);
 
 	return (

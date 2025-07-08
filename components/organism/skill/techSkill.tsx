@@ -1,12 +1,18 @@
+"use client";
+
 import { Header } from "@/components/atom/header";
 import { Card, CardContent } from "@/components/ui/card";
-
-import { techSkillList } from "@/constant/skills/techSkillGrid";
+import { getTechSkillList } from "@/constant/skills/techSkillGrid";
 import { Tooltip, TooltipTrigger, TooltipContent } from "@radix-ui/react-tooltip";
+import { useTranslation } from "react-i18next";
+
 export const TechSkill = () => {
+	const { t } = useTranslation("skills");
+	const techSkillList = getTechSkillList(t);
+
 	return (
 		<div className="justify-items-start w-full px-2 flex flex-col gap-4">
-			<Header level="h3">Tech Skills</Header>
+			<Header level="h3">{t("skillsSection.technical")}</Header>
 			<Card className="w-full h-full shadow-none">
 				<CardContent className=" flex flex-row flex-wrap gap-2">
 					{techSkillList.map((skill, index) => {

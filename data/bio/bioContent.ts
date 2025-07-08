@@ -1,5 +1,15 @@
 import { BioContentType, EducationContent } from "@/types/bioType";
+import { TFunction } from "i18next";
 
+export const getBioContent = (t: TFunction): BioContentType => {
+	return {
+		main: t("bio.main", { returnObjects: true }) as string[],
+		interest: t("bio.interests", { returnObjects: true }) as string[],
+		education: t("bio.education", { returnObjects: true }) as EducationContent[],
+	};
+};
+
+// 後方互換性のための既存のエクスポート（必要に応じて削除可能）
 export const bioContent: BioContentType = {
 	main: [
 		"I am a undergraduate student at the Keio University in Japan",

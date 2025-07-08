@@ -1,4 +1,11 @@
 import { LanguageLevel } from "@/types/languageLevel";
+import { TFunction } from "i18next";
+
+export const getLanguageLevel = (t: TFunction): LanguageLevel[] => {
+	return t("skills.languageSkills", { returnObjects: true }) as LanguageLevel[];
+};
+
+// 後方互換性のための既存のエクスポート（必要に応じて削除可能）
 export const languageLevel: LanguageLevel[] = [
 	{
 		name: "English",

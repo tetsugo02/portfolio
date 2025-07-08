@@ -1,0 +1,71 @@
+{
+	"skillsSection": {
+		"certifications": "Certifications",
+		"languages": "Languages",
+		"technical": "Technical Skills"
+	},
+	"skills": {
+		"languageSkills": [
+			{
+				"name": "English",
+				"percentage": 70,
+				"description": "ビジネスレベル、技術文書の理解と基本的な会話が可能です。"
+			},
+			{
+				"name": "Chinese",
+				"percentage": 100,
+				"description": "母国語、全ての面で流暢です。"
+			},
+			{
+				"name": "Japanese",
+				"percentage": 95,
+				"description": "バイリンガル、全ての面で流暢です。"
+			},
+			{
+				"name": "French",
+				"percentage": 10,
+				"description": "基本的な理解があり、簡単な挨拶が可能です。"
+			}
+		],
+		"technicalSkills": [
+			{
+				"name": "Python"
+			},
+			{
+				"name": "TypeScript"
+			},
+			{
+				"name": "C++"
+			},
+			{
+				"name": "React"
+			},
+			{
+				"name": "Next.js"
+			},
+			{
+				"name": "PyTorch"
+			},
+			{
+				"name": "Linux"
+			},
+			{
+				"name": "NumPy"
+			},
+			{
+				"name": "Unity"
+			}
+		],
+		"certifications": [
+			{
+				"name": "Toeic 735"
+			},
+			{
+				"name": "基本情報技術者試験"
+			},
+			{
+				"name": "画像処理エンジニア検定 エキスパート"
+			}
+		]
+	}
+}

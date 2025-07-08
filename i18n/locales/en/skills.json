@@ -1,44 +1,4 @@
 {
-	"about": "About",
-	"skillsPage": "Skills",
-	"works": "Works",
-	"experience": "Experience",
-	"languages": {
-		"english": "English",
-		"japanese": "Japanese"
-	},
-	"bio": {
-		"title": "About Me",
-		"subtitle": "Software Engineer",
-		"main": [
-			"I am a undergraduate student at the Keio University in Japan",
-			"I also work as a Research Engineer intern."
-		],
-		"interests": ["Machine Learning", "Computer Network", "Operating System"],
-		"education": [
-			{
-				"field": "Keio University, Faculty of Science and Technology",
-				"time": "2022/4 ~"
-			},
-			{
-				"field": "Keio University, Electronics and Electrical Engineering",
-				"time": "2023/4 ~"
-			},
-			{
-				"field": "Keio University, Murata Laboratory",
-				"time": "2025/4 ~"
-			}
-		]
-	},
-	"education": {
-		"title": "Education"
-	},
-	"interests": {
-		"title": "Interests"
-	},
-	"workExperience": {
-		"title": "Work Experience"
-	},
 	"skillsSection": {
 		"certifications": "Certifications",
 		"languages": "Languages",
@@ -94,6 +54,17 @@
 			},
 			{
 				"name": "Unity"
+			}
+		],
+		"certifications": [
+			{
+				"name": "TOEIC 735"
+			},
+			{
+				"name": "Fundamental Information Technology Engineer Examination"
+			},
+			{
+				"name": "Image Processing Engineer Examination Expert"
 			}
 		]
 	}
