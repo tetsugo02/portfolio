@@ -1,3 +1,4 @@
+"use client";
 import { HeaderLevels, headerStyles } from "@/types/headerTypes";
 import { cn } from "@/lib/utils";
 
