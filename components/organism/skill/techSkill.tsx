@@ -5,9 +5,26 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getTechSkillList } from "@/constant/skills/techSkillGrid";
 import { Tooltip, TooltipTrigger, TooltipContent } from "@radix-ui/react-tooltip";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 export const TechSkill = () => {
-	const { t } = useTranslation("skills");
+	const { t, i18n } = useTranslation("skills");
+	const [isReady, setIsReady] = useState(false);
+
+	useEffect(() => {
+		if (i18n.isInitialized) {
+			setIsReady(true);
+		} else {
+			const handleInit = () => setIsReady(true);
+			i18n.on("initialized", handleInit);
+			return () => i18n.off("initialized", handleInit);
+		}
+	}, [i18n]);
+
+	if (!isReady) {
+		return <div>Loading...</div>;
+	}
+
 	const techSkillList = getTechSkillList(t);
 
 	return (
