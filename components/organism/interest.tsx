@@ -29,13 +29,13 @@ export const Interest = () => {
 	return (
 		<div>
 			<Header level="h3">{t("interests.title")}</Header>
-			<ul className="list-disc list-inside mt-2">
+			<div className="list-disc list-inside mt-2 ml-2 border-l-2">
 				{interestContent.map((item, index) => (
-					<li key={index} className="m-1 text-lg">
+					<div key={index} className="m-1 text-lg">
 						{item}
-					</li>
+					</div>
 				))}
-			</ul>
+			</div>
 		</div>
 	);
 };
