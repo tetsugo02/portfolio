@@ -4,7 +4,8 @@
 		"subtitle": "Software Engineer",
 		"main": [
 			"I am a undergraduate student at the Keio University in Japan",
-			"I also work as a Research Engineer intern."
+			"I also work as a Research Engineer intern.",
+			"At the same time, I am a OSS contributor."
 		],
 		"interests": ["Machine Learning", "Computer Network", "Operating System"],
 		"education": [
