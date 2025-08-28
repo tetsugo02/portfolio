@@ -61,13 +61,3 @@ export const getActivityCardDetail = (
 			};
 	}
 };
-
-const getTitle = (activityType: GitHubEventTypeKey, data: GithubEvent): string => {
-	switch (activityType) {
-		case "PullRequestEvent":
-			return data?.payload?.pull_request?.title || "No title available";
-		case "IssuesEvent":
-		default:
-			return "No title available";
-	}
-};

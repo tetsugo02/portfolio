@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent, CardFooter } from "../ui/card";
+import { Card, CardContent, CardFooter } from "../ui/card";
 import { Separator } from "../ui/separator";
 import { GitHubEventTypeKey } from "@/types/githubEventsType";
 import { getActivityCardDetail } from "@/lib/getworks/getActivityCardDetail";
