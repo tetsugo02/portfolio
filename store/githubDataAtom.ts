@@ -26,10 +26,18 @@ export type GithubEvent = {
 		avatar_url: string;
 	};
 	payload: {
+		forkee?: {
+			id: number;
+			full_name: string;
+			html_url: string;
+		};
 		action?: string;
 		issue?: any;
 		comment?: any;
 		pages?: any[];
+		pull_request?: any;
+		ref_type?: string;
+		ref?: string;
 	};
 	public: boolean;
 	created_at: string | null;

@@ -9,10 +9,12 @@ import { Separator } from "@/components/ui/separator";
 import { RecentExperience } from "@/components/organism/workExperience";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import { useInitData } from "@/hooks/useInitData";
 
 export default function Home() {
 	const { t, i18n } = useTranslation("home");
 	const [isReady, setIsReady] = useState(false);
+	const { githubEventData } = useInitData();
 
 	useEffect(() => {
 		if (i18n.isInitialized) {
@@ -56,7 +58,7 @@ export default function Home() {
 			<Header level="h1" className="mt-4">
 				{t("workExperience.title")}
 			</Header>
-			<RecentExperience />
+			<RecentExperience githubEventData={githubEventData} />
 			<footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
 		</>
 	);
