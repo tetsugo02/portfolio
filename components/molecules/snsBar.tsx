@@ -7,7 +7,10 @@ export const SnsBar = () => {
 				<snsBarItems.github.icon size={snsBarItems.github.size} />
 			</a>
 			<a href={snsBarItems.Linkedin.url} className="items-center" target="_blank">
-				<snsBarItems.Linkedin.icon size={snsBarItems.Linkedin.size} />
+				<snsBarItems.Linkedin.icon
+					size={snsBarItems.Linkedin.size}
+					color={snsBarItems.Linkedin.iconColor}
+				/>
 			</a>
 		</div>
 	);

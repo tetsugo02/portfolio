@@ -32,15 +32,18 @@ export const snsBarItems = {
 		url: "https://github.com/tetsugo02",
 		size: 30,
 		icon: VscGithub,
+		iconColor: "black",
 	},
 	mail: {
 		url: "totetsugo2002[at]keio.jp",
 		size: 32,
 		icon: IoMail,
+		iconColor: "black",
 	},
 	Linkedin: {
 		url: "https://www.linkedin.com/in/哲豪-董-634413306/",
 		size: 32,
 		icon: FaLinkedin, // Replace with actual LinkedIn icon if available
+		iconColor: "#0A66C2",
 	},
 };
