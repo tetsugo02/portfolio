@@ -12,6 +12,7 @@ interface ActivityCardDetail {
 	iconColor?: string;
 	title?: string;
 	description?: string;
+	repo_url?: string;
 }
 
 export const getActivityCardDetail = (
@@ -26,6 +27,7 @@ export const getActivityCardDetail = (
 				url: data?.payload?.forkee?.html_url || "",
 				title: `Forked ${data.repo.name} as ${data.payload?.forkee?.full_name}` || "",
 				description: "",
+				repo_url: data.repo.url,
 			};
 		case "PullRequestEvent":
 			return {
@@ -34,6 +36,7 @@ export const getActivityCardDetail = (
 				title: data?.payload?.pull_request?.title || "No title available",
 				url: data?.payload?.pull_request?.html_url || "",
 				description: "",
+				repo_url: data.repo.url,
 			};
 		case "IssuesEvent":
 			return {
@@ -42,6 +45,7 @@ export const getActivityCardDetail = (
 				title: data?.payload?.issue?.title || "No title available",
 				url: data?.payload?.issue?.html_url || "",
 				description: "",
+				repo_url: data.repo.url,
 			};
 		case "CreateEvent":
 			return {
@@ -50,6 +54,7 @@ export const getActivityCardDetail = (
 				title: `Created ${data.payload?.ref_type}: ${data.payload?.ref}` || "",
 				url: data.repo.url.replace("api.", "").replace("repos/", ""),
 				description: "",
+				repo_url: data.repo.url,
 			};
 		default:
 			return {
@@ -58,6 +63,17 @@ export const getActivityCardDetail = (
 				url: "",
 				title: "",
 				description: "",
+				repo_url: data.repo.url,
 			};
+	}
+};
+
+export const fetchRepoAvatarUrl = async (repoApiUrl: string): Promise<string | null> => {
+	try {
+		const res = await fetch(repoApiUrl);
+		const repoData = await res.json();
+		return repoData.owner?.avatar_url ?? null;
+	} catch {
+		return null;
 	}
 };
